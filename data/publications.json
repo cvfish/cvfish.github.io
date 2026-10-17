@@ -177,46 +177,6 @@
     ]
   },
   {
-    "id": "active-camera-array",
-    "year": 2014,
-    "title": "Simultaneous Active Camera Array Focus Plane Estimation and Occluded Moving Object Imaging",
-    "authors": "Tao Yang, Yanning Zhang, Rui Yu, Xiaoqiang Zhang, Ting Chen, Lingyan Ran, Zhengxi Song, Wenguang Ma",
-    "venue": "Image and Vision Computing",
-    "short_venue": "IVC",
-    "category": "imaging",
-    "award": "",
-    "note": "",
-    "image": "ryu_files/hybridarray_crop.jpg",
-    "image_alt": "Camera-array reconstruction of an occluded moving object",
-    "description": "Synthetic aperture imaging for automatic focusing and observing moving objects through occlusion in cluttered scenes.",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "papers/IVC2014.pdf"
-      }
-    ]
-  },
-  {
-    "id": "camera-array-loops",
-    "year": 2013,
-    "title": "Exploiting Loops in the Camera Array for Automatic Focusing Depth Estimation",
-    "authors": "Tao Yang, Yanning Zhang, Rui Yu, Ting Chen",
-    "venue": "International Journal of Advanced Robotic Systems",
-    "short_venue": "IJARS",
-    "category": "imaging",
-    "award": "",
-    "note": "",
-    "image": "ryu_files/focus_crop.jpg",
-    "image_alt": "Camera-array setup for focusing depth estimation",
-    "description": "Automatic focusing depth estimation using loops in a camera array.",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "ryu_files/exploiting_loops_IJARS.pdf"
-      }
-    ]
-  },
-  {
     "id": "hybrid-imaging",
     "year": 2011,
     "title": "Continuously Tracking and See-through Occlusion Based on a New Hybrid Synthetic Aperture Imaging Model",
