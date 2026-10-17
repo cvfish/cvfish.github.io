@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cvfish.github.io/sitemap.xml
