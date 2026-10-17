@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Capturing the dense geometry of complex, deforming shapes using a single RGB camera and direct photometric optimization.">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Direct, Dense, and Deformable: Template-Based Non-Rigid 3D Reconstruction from RGB Video — Rui Yu">
+  <meta property="og:description" content="Capturing the dense geometry of complex, deforming shapes using a single RGB camera and direct photometric optimization.">
+  <meta property="og:image" content="https://cvfish.github.io/ryu_files/circle.png">
+  <meta property="og:url" content="https://cvfish.github.io/projects/direct-dense-deformable/index.html">
+  <title>Direct, Dense, and Deformable: Template-Based Non-Rigid 3D Reconstruction from RGB Video — Rui Yu</title>
+  <link rel="canonical" href="https://cvfish.github.io/projects/direct-dense-deformable/index.html">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/site.css">
+  <script src="../../assets/site.js" defer></script>
+</head>
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="../../index.html" aria-label="Rui Yu — home">rui yu<span class="wordmark-dot">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="../../index.html#research">Research</a>
+        <a href="../../index.html#projects">Projects</a>
+        <a href="../../index.html#about">About</a>
+        <a class="nav-cv" href="../../cv.html">CV <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main"><header class="detail-header"><a class="back-link" href="../../index.html#research">← All research</a><p class="eyebrow" style="margin-top:26px">ICCV 2015</p><h1>Direct, Dense, and Deformable: Template-Based Non-Rigid 3D Reconstruction from RGB Video</h1><p class="pub-authors"><strong>Rui Yu</strong>, Chris Russell, Neill D. F. Campbell, Lourdes Agapito</p><div class="pub-links"><a href="../../papers/direct_nrsfm.pdf">Paper</a><a href="https://github.com/cvfish/PangaeaTracking">Code</a><a href="../../papers/pami-compressed.pdf">Extended version</a></div></header>
+        <figure class="detail-figure"><img src="../../project-assets/direct-dense-deformable/iccv2015.png" alt="Dense deformable 3D surface reconstructed from RGB video" class="" loading="eager" decoding="async"></figure><div class="prose"><h2>Abstract</h2><p>In this paper we tackle the problem of capturing the dense, detailed 3D geometry of generic, complex non-rigid meshes using a single RGB-only commodity video camera and a direct approach. While robust and even real-time solutions exist to this problem if the observed scene is static, for non-rigid dense shape capture current systems are typically restricted to the use of complex multi-camera rigs, take advantage of the additional depth channel available in RGB-D cameras, or deal with specific shapes such as faces or planar surfaces. In contrast, our method makes use of a single RGB video as input; it can capture the deformations of generic shapes; and the depth estimation is dense, per-pixel and direct. We first compute a dense 3D template of the shape of the object, using a short rigid sequence, and subsequently perform online reconstruction of the non-rigid mesh as it evolves over time. Our energy optimization approach minimizes a robust photometric cost that simultaneously estimates the temporal correspondences and 3D deformations with respect to the template mesh. In our experimental evaluation we show a range of qualitative results on novel datasets; we compare against an existing method that requires multi-frame optical flow; and perform a quantitative evaluation against other template-based approaches on a ground truth dataset.</p><h2>Results</h2><a class="video-link" href="https://www.youtube.com/watch?v=O9VV3FFWiGU">Watch the research demo <span aria-hidden="true">↗</span><span>Video on YouTube</span></a></div><div class="detail-footer"><a href="../../index.html#research">← Back to all publications</a></div></main>
+  <footer class="site-footer">
+    <div><a class="wordmark" href="../../index.html">rui yu<span class="wordmark-dot">.</span></a><p>Computer vision · Machine learning · 3D geometry</p></div>
+    <div class="footer-links"><a href="mailto:cvyurui@gmail.com">Email</a><a href="https://github.com/cvfish">GitHub</a><a href="https://scholar.google.com/citations?user=M0xPL9cAAAAJ&amp;hl=en">Google Scholar</a><span>Updated October 2026</span></div>
+  </footer>
+</body>
+</html>
