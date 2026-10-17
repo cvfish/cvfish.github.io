@@ -29,26 +29,6 @@
     "image_source": "https://arxiv.org/html/2608.23943v2/figures/gen_compare/per_method/image_043/luce_gs_color.0000.png"
   },
   {
-    "id": "better-together-preprint",
-    "year": 2017,
-    "title": "Better Together: Joint Reasoning for Non-rigid 3D Reconstruction with Specularities and Shading",
-    "authors": "Qi Liu-Yin*, Rui Yu*, Lourdes Agapito, Andrew Fitzgibbon, Chris Russell",
-    "venue": "arXiv preprint · submitted to IJCV",
-    "short_venue": "Preprint",
-    "category": "3d",
-    "award": "",
-    "note": "* Equal contribution.",
-    "image": "ryu_files/ijcv_crop_new.png",
-    "image_alt": "Non-rigid reconstruction with shading and specular highlights",
-    "description": "Joint reasoning about shape, motion, shading, and specularities improves the quality and robustness of dynamic 3D reconstruction from a single camera.",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://arxiv.org/abs/1708.01654"
-      }
-    ]
-  },
-  {
     "id": "better-together",
     "year": 2016,
     "title": "Better Together: Joint Reasoning for Non-rigid 3D Reconstruction with Specularities and Shading",
@@ -57,7 +37,7 @@
     "short_venue": "BMVC",
     "category": "3d",
     "award": "Best Poster",
-    "note": "Extended by the 2017 preprint listed above.",
+    "note": "Extended version available as a 2017 preprint.",
     "image": "ryu_files/bmvc_crop_new.png",
     "image_alt": "Shading-aware reconstruction of a deforming object",
     "description": "A unified approach to tracking and reconstructing dynamic objects while modeling both specularities and shading.",
@@ -65,6 +45,10 @@
       {
         "label": "Paper",
         "url": "papers/better_together.pdf"
+      },
+      {
+        "label": "Extended version (2017)",
+        "url": "https://arxiv.org/abs/1708.01654"
       },
       {
         "label": "Project",
