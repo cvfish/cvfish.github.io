@@ -73,8 +73,6 @@ def publication(p):
       {links(p['links'])}</li>'''
 
 def home():
-    project_html = "".join(f'''<li><h3><a href="{e(p['video'])}">{e(p['title'])}</a></h3>
-      <p>{e(p['description'])}</p><a href="{e(p['video'])}">Watch demo</a></li>''' for p in projects)
     content = f'''<header class="home-header"><h1>{e(profile['name'])}</h1>
       <p class="intro">I am a <strong>{e(profile['role'])}</strong> at <strong>{e(profile['company'])}</strong>. {e(profile['intro'])}</p></header>
     <section id="about"><h2 id="bio">Bio</h2><p>{e(profile['background'])}</p>
@@ -82,14 +80,13 @@ def home():
     <section id="research"><h2 id="publications">Selected Publications</h2>
       <ol class="publications">{''.join(publication(p) for p in papers)}</ol>
       <p class="thesis"><strong>PhD thesis:</strong> <a href="{e(local_link('papers/thesis_RuiYu.pdf'))}">Learning Dense 3D Models from Monocular Video</a> (UCL, 2017).</p></section>
-    <section id="projects"><h2>Earlier projects</h2><ul class="project-list">{project_html}</ul></section>
     <section class="links-section"><h2>Links</h2><ul>
       <li><a href="mailto:{e(profile['email'])}">{e(profile['email'])}</a></li>
       <li><a href="{e(profile['github'])}">GitHub</a></li>
       <li><a href="{e(profile['scholar'])}">Google Scholar</a></li>
       <li><a href="cv.html">CV</a> / <a href="files/rui-yu-cv.pdf">PDF</a></li>
     </ul></section>'''
-    page("index.html", "Rui Yu — Computer Vision & Machine Learning", f"Rui Yu, {profile['role']} at {profile['company']}. 3D computer vision, machine learning, research, and projects.", content, body_class="home-page")
+    page("index.html", "Rui Yu — Computer Vision & Machine Learning", f"Rui Yu, {profile['role']} at {profile['company']}. 3D computer vision, machine learning, and selected publications.", content, body_class="home-page")
 
 def cv():
     def items(values, education=False):
@@ -141,7 +138,7 @@ def research_pages():
 home()
 cv()
 research_pages()
-page("404.html", "Page not found — Rui Yu", "Return to Rui Yu’s homepage.", '<section class="page-top"><p class="eyebrow">404</p><h1>Let’s find your way back.</h1><p class="lead">This page may have moved. You can find the publications, projects, and CV on my homepage.</p><a class="button" href="/">Go to homepage</a></section>', prefix="/")
+page("404.html", "Page not found — Rui Yu", "Return to Rui Yu’s homepage.", '<section class="page-top"><p class="eyebrow">404</p><h1>Let’s find your way back.</h1><p class="lead">This page may have moved. You can find the publications and CV on my homepage.</p><a class="button" href="/">Go to homepage</a></section>', prefix="/")
 (OUT / ".nojekyll").touch()
 (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {profile['site_url']}/sitemap.xml\n")
 paths = ["", "cv.html", "projects/better-together/", "projects/direct-dense-deformable/", "projects/video-popup/"]
