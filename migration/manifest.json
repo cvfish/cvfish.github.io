@@ -1,0 +1,222 @@
+{
+  "source": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/",
+  "recovered_on": "2026-10-17",
+  "source_last_modified": "2019-11-17",
+  "files": [
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/cv_ruiyu_detailed.pdf",
+      "path": "public/ryu_files/cv_ruiyu_detailed.pdf",
+      "status": "recovered",
+      "bytes": 741137,
+      "sha256": "b992cd2a7f0b71c7e2633ec67c2ea7e56000ba5eac7727262a387cb974d7f80d"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/circle.png",
+      "path": "public/ryu_files/circle.png",
+      "status": "recovered",
+      "bytes": 89184,
+      "sha256": "42857d8fc771499dda1b0d459c29b799eb234fcbdd03e29508bb69c82dbd4d8d"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/ijcv_crop_new.png",
+      "path": "public/ryu_files/ijcv_crop_new.png",
+      "status": "recovered",
+      "bytes": 23077,
+      "sha256": "e924cbb7a8a2eef6c6b71e3fe4e80648aa3cd338779bea2fbf3113262afad9bc"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/bmvc_crop_new.png",
+      "path": "public/ryu_files/bmvc_crop_new.png",
+      "status": "recovered",
+      "bytes": 38693,
+      "sha256": "2d6ef24c8b85f754027cbf2f3789acf0aea2e0f96542e31f00fb6886aea2d6e8"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/better_together.pdf",
+      "path": "public/papers/better_together.pdf",
+      "status": "recovered",
+      "bytes": 1033602,
+      "sha256": "dd8a9757ef418aa65a23d952dff56756c4165772971093e75d104a282d371a73"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/better_together.html",
+      "path": "migration/source/better_together.html",
+      "status": "recovered",
+      "bytes": 4136,
+      "sha256": "e0b094830e3aca56b9f83bc7e5155ffe5041153a63d27ce0b1a5f672e8583c08"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/synth_datasets.zip",
+      "status": "external",
+      "reason": "Dataset retained at original URL; size not yet verified."
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/jigsaw_puzzle_crop.png",
+      "path": "public/ryu_files/jigsaw_puzzle_crop.png",
+      "status": "recovered",
+      "bytes": 40817,
+      "sha256": "2f7beacd6401745d3cec062df47ceb6635ace7b5c31563ded8daaca2daff6510"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/jigsaw/Jigsaw_final_compressed.pdf",
+      "path": "public/papers/Jigsaw_final_compressed.pdf",
+      "status": "recovered",
+      "bytes": 2412166,
+      "sha256": "6cef92e56a835b69baff9eebbffe4a1b83f6742db8383e12ef025f3ae19228d8"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/jigsaw/Jigsaw_sup_bmvc_final.pdf",
+      "path": "public/papers/Jigsaw_sup_bmvc_final.pdf",
+      "status": "recovered",
+      "bytes": 10084394,
+      "sha256": "ea2f205f3baa909f6343ed061819fbd4e8ad6248d8b4b5a973683d39eb9b2211"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/iccv_crop.png",
+      "path": "public/ryu_files/iccv_crop.png",
+      "status": "recovered",
+      "bytes": 24623,
+      "sha256": "d0a454646781b6a474054f4d82d7a15b32991fbaa6d720463e106c1980a99017"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/direct_nrsfm.pdf",
+      "path": "public/papers/direct_nrsfm.pdf",
+      "status": "recovered",
+      "bytes": 8868123,
+      "sha256": "08519ccd21b8a1e34eaf90d6529c0403084026e591857014b7da199a40626972"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/direct_nrsfm.html",
+      "path": "migration/source/direct_nrsfm.html",
+      "status": "recovered",
+      "bytes": 7411,
+      "sha256": "c53e5bb59c8c294b293ac9afb3a08e2717b60b1c880c7dbc4a5296b2f2789392"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/pami-compressed.pdf",
+      "path": "public/papers/pami-compressed.pdf",
+      "status": "recovered",
+      "bytes": 1687700,
+      "sha256": "aa00ecccc2b75553f0d03db381fdf6de7c2a597c219764ae3c974f6c9ca6e66c"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/video_popup_crop.png",
+      "path": "public/ryu_files/video_popup_crop.png",
+      "status": "recovered",
+      "bytes": 32775,
+      "sha256": "44f8e342d4e38834b4b3ed4699f5afedfc6254e038cd4b8767f334c9c592d1fa"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPopup.pdf",
+      "path": "public/papers/VideoPopup.pdf",
+      "status": "recovered",
+      "bytes": 25162445,
+      "sha256": "e57a133a9db74118f21e026e4d809842da92d7152695fb7577dee5c0ededb348"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPopup2.html",
+      "path": "migration/source/VideoPopup2.html",
+      "status": "recovered",
+      "bytes": 8002,
+      "sha256": "8f83822ccda90d61b65c33bda8755161190c59f630b74b89b2aa72c7b0b5c982"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPopup_pami-compressed.pdf",
+      "path": "public/papers/VideoPopup_pami-compressed.pdf",
+      "status": "recovered",
+      "bytes": 2094653,
+      "sha256": "f470ccb13e4a1a98a315d51ff12fc0355538e88f1585d3bbd4b2b186e7bc3991"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/SAI_eccv14_crop.png",
+      "path": "public/ryu_files/SAI_eccv14_crop.png",
+      "status": "recovered",
+      "bytes": 24531,
+      "sha256": "eec04f95701fd2cddd1b007d4c95e41bac27af46d67ef7a66b52be6c33a75334"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/AllSAI.pdf",
+      "path": "public/papers/AllSAI.pdf",
+      "status": "recovered",
+      "bytes": 4833015,
+      "sha256": "633aa6808a02504c0a32437ec869ee75537785947a2b84142df6664ad450d67d"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/hybridarray_crop.jpg",
+      "path": "public/ryu_files/hybridarray_crop.jpg",
+      "status": "recovered",
+      "bytes": 10190,
+      "sha256": "d2fa9f618e74b30b208c8849474d1537c8b4afd0b83abe4182099540289544ec"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/IVC2014.pdf",
+      "path": "public/papers/IVC2014.pdf",
+      "status": "recovered",
+      "bytes": 4662848,
+      "sha256": "b0cd9decaf09c0503bfdda27f60c5a08a793ac0176b2c2fdc9050aa4aa50431b"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/focus_crop.jpg",
+      "path": "public/ryu_files/focus_crop.jpg",
+      "status": "recovered",
+      "bytes": 11540,
+      "sha256": "a4b2e94505c2129637f94d5645e0793b5431c0672cbe76348753363789e38fbc"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/exploiting_loops_IJARS.pdf",
+      "path": "public/ryu_files/exploiting_loops_IJARS.pdf",
+      "status": "recovered",
+      "bytes": 3407488,
+      "sha256": "0665a59a1bc7c684a5ceb16a81cf0b0dc1cdd074fb8d4679ca0696f880690d37"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/system_crop.png",
+      "path": "public/ryu_files/system_crop.png",
+      "status": "recovered",
+      "bytes": 25068,
+      "sha256": "a807b3f42aa3c70bd254fbb8c0073834a52c80a82d4057d1c937639bbb8c89b8"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/CVPR2011.pdf",
+      "path": "public/papers/CVPR2011.pdf",
+      "status": "recovered",
+      "bytes": 4945662,
+      "sha256": "984d160f0fd23a73e1c5fefd432438207208c1a6c7140f1f37d23e2e3468a2cb"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/thesis_crop.png",
+      "path": "public/ryu_files/thesis_crop.png",
+      "status": "recovered",
+      "bytes": 24642,
+      "sha256": "a3094830c756aedcd9ad15631c86117890c994bb861a7e9705ee7b1546ebfc84"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/thesis_RuiYu.pdf",
+      "path": "public/papers/thesis_RuiYu.pdf",
+      "status": "recovered",
+      "bytes": 6076598,
+      "sha256": "93e4c6f27eca73e9ef0da99608a63eea13e86c8aa9ad0c0d9d98cd0e674c80c0"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/3d.jpg",
+      "path": "public/ryu_files/3d.jpg",
+      "status": "recovered",
+      "bytes": 86968,
+      "sha256": "db59b68ea6a0f200c2fe41a78a5253efa7f80164a04978e5e6eeaefbf09ad379"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/UAV.jpg",
+      "path": "public/ryu_files/UAV.jpg",
+      "status": "recovered",
+      "bytes": 151809,
+      "sha256": "1748d813bc2950fb9e8093e061fefac264fab7fd0a7c9d9fa1ba68720ed2e9cc"
+    },
+    {
+      "url": "http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ryu_files/tracking.jpg",
+      "path": "public/ryu_files/tracking.jpg",
+      "status": "recovered",
+      "bytes": 208384,
+      "sha256": "5df702943462414b26ebe22e0797ffaac1a5f047a4cd527877481796ba94ee37"
+    }
+  ]
+}
