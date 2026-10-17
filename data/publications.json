@@ -1,0 +1,226 @@
+[
+  {
+    "id": "better-together-preprint",
+    "year": 2017,
+    "title": "Better Together: Joint Reasoning for Non-rigid 3D Reconstruction with Specularities and Shading",
+    "authors": "Qi Liu-Yin*, Rui Yu*, Lourdes Agapito, Andrew Fitzgibbon, Chris Russell",
+    "venue": "arXiv preprint · submitted to IJCV",
+    "short_venue": "Preprint",
+    "category": "3d",
+    "award": "",
+    "note": "* Equal contribution.",
+    "image": "ryu_files/ijcv_crop_new.png",
+    "image_alt": "Non-rigid reconstruction with shading and specular highlights",
+    "description": "Joint reasoning about shape, motion, shading, and specularities improves the quality and robustness of dynamic 3D reconstruction from a single camera.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/1708.01654"
+      }
+    ]
+  },
+  {
+    "id": "better-together",
+    "year": 2016,
+    "title": "Better Together: Joint Reasoning for Non-rigid 3D Reconstruction with Specularities and Shading",
+    "authors": "Qi Liu-Yin, Rui Yu, Lourdes Agapito, Andrew Fitzgibbon, Chris Russell",
+    "venue": "British Machine Vision Conference",
+    "short_venue": "BMVC",
+    "category": "3d",
+    "award": "Best Poster",
+    "note": "Extended by the 2017 preprint listed above.",
+    "image": "ryu_files/bmvc_crop_new.png",
+    "image_alt": "Shading-aware reconstruction of a deforming object",
+    "description": "A unified approach to tracking and reconstructing dynamic objects while modeling both specularities and shading.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "papers/better_together.pdf"
+      },
+      {
+        "label": "Project",
+        "url": "projects/better-together/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/qilon/PangaeaTracking"
+      },
+      {
+        "label": "Dataset (UCL)",
+        "url": "http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/synth_datasets.zip"
+      }
+    ]
+  },
+  {
+    "id": "jigsaw",
+    "year": 2016,
+    "title": "Solving Jigsaw Puzzles with Linear Programming",
+    "authors": "Rui Yu, Chris Russell, Lourdes Agapito",
+    "venue": "British Machine Vision Conference",
+    "short_venue": "BMVC",
+    "category": "optimization",
+    "award": "Oral",
+    "note": "",
+    "image": "ryu_files/jigsaw_puzzle_crop.png",
+    "image_alt": "Image pieces assembled as a jigsaw puzzle",
+    "description": "A linear programming formulation that uses pairwise matches simultaneously to determine the global position of each puzzle piece.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "papers/Jigsaw_final_compressed.pdf"
+      },
+      {
+        "label": "Supplement",
+        "url": "papers/Jigsaw_sup_bmvc_final.pdf"
+      },
+      {
+        "label": "Extended version",
+        "url": "https://arxiv.org/abs/1511.04472"
+      }
+    ]
+  },
+  {
+    "id": "direct-dense-deformable",
+    "year": 2015,
+    "title": "Direct, Dense, and Deformable: Template-Based Non-Rigid 3D Reconstruction from RGB Video",
+    "authors": "Rui Yu, Chris Russell, Neill D. F. Campbell, Lourdes Agapito",
+    "venue": "International Conference on Computer Vision",
+    "short_venue": "ICCV",
+    "category": "3d",
+    "award": "",
+    "note": "",
+    "image": "ryu_files/iccv_crop.png",
+    "image_alt": "Dense deformable 3D surface reconstructed from RGB video",
+    "description": "Capturing the dense geometry of complex, deforming shapes using a single RGB camera and direct photometric optimization.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "papers/direct_nrsfm.pdf"
+      },
+      {
+        "label": "Project",
+        "url": "projects/direct-dense-deformable/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/cvfish/PangaeaTracking"
+      },
+      {
+        "label": "Extended version",
+        "url": "papers/pami-compressed.pdf"
+      }
+    ]
+  },
+  {
+    "id": "video-popup",
+    "year": 2014,
+    "title": "Video Pop-up: Monocular 3D Reconstruction of Dynamic Scenes",
+    "authors": "Chris Russell*, Rui Yu*, Lourdes Agapito",
+    "venue": "European Conference on Computer Vision",
+    "short_venue": "ECCV",
+    "category": "3d",
+    "award": "Oral",
+    "note": "* Equal contribution.",
+    "image": "ryu_files/video_popup_crop.png",
+    "image_alt": "A dynamic scene decomposed into reconstructed 3D objects",
+    "description": "An unsupervised approach that segments a video into objects and reconstructs their 3D geometry, handling rigid, articulated, and non-rigid motion.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "papers/VideoPopup.pdf"
+      },
+      {
+        "label": "Project",
+        "url": "projects/video-popup/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/cvfish/VideoPopup"
+      },
+      {
+        "label": "Extended version",
+        "url": "papers/VideoPopup_pami-compressed.pdf"
+      }
+    ]
+  },
+  {
+    "id": "all-in-focus",
+    "year": 2014,
+    "title": "All-in-Focus Synthetic Aperture Imaging",
+    "authors": "Tao Yang, Yanning Zhang, Jingyi Yu, Jing Li, Wenguang Ma, Xiaomin Tong, Rui Yu, Lingyan Ran",
+    "venue": "European Conference on Computer Vision",
+    "short_venue": "ECCV",
+    "category": "imaging",
+    "award": "",
+    "note": "",
+    "image": "ryu_files/SAI_eccv14_crop.png",
+    "image_alt": "All-in-focus imaging through a camera array",
+    "description": "Depth-free, all-in-focus synthetic aperture imaging based on light-field visibility analysis.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "papers/AllSAI.pdf"
+      }
+    ]
+  },
+  {
+    "id": "active-camera-array",
+    "year": 2014,
+    "title": "Simultaneous Active Camera Array Focus Plane Estimation and Occluded Moving Object Imaging",
+    "authors": "Tao Yang, Yanning Zhang, Rui Yu, Xiaoqiang Zhang, Ting Chen, Lingyan Ran, Zhengxi Song, Wenguang Ma",
+    "venue": "Image and Vision Computing",
+    "short_venue": "IVC",
+    "category": "imaging",
+    "award": "",
+    "note": "",
+    "image": "ryu_files/hybridarray_crop.jpg",
+    "image_alt": "Camera-array reconstruction of an occluded moving object",
+    "description": "Synthetic aperture imaging for automatic focusing and observing moving objects through occlusion in cluttered scenes.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "papers/IVC2014.pdf"
+      }
+    ]
+  },
+  {
+    "id": "camera-array-loops",
+    "year": 2013,
+    "title": "Exploiting Loops in the Camera Array for Automatic Focusing Depth Estimation",
+    "authors": "Tao Yang, Yanning Zhang, Rui Yu, Ting Chen",
+    "venue": "International Journal of Advanced Robotic Systems",
+    "short_venue": "IJARS",
+    "category": "imaging",
+    "award": "",
+    "note": "",
+    "image": "ryu_files/focus_crop.jpg",
+    "image_alt": "Camera-array setup for focusing depth estimation",
+    "description": "Automatic focusing depth estimation using loops in a camera array.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "ryu_files/exploiting_loops_IJARS.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hybrid-imaging",
+    "year": 2011,
+    "title": "Continuously Tracking and See-through Occlusion Based on a New Hybrid Synthetic Aperture Imaging Model",
+    "authors": "Tao Yang, Yanning Zhang, Xiaomin Tong, Xiaoqiang Zhang, Rui Yu",
+    "venue": "Conference on Computer Vision and Pattern Recognition",
+    "short_venue": "CVPR",
+    "category": "imaging",
+    "award": "",
+    "note": "",
+    "image": "ryu_files/system_crop.png",
+    "image_alt": "A multi-camera synthetic aperture tracking system",
+    "description": "A hybrid synthetic aperture imaging model for detecting and tracking people in crowded scenes with severe occlusion.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "papers/CVPR2011.pdf"
+      }
+    ]
+  }
+]
