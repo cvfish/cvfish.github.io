@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="$description">
-  <meta name="theme-color" content="#f7f7f2">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="$title">
   <meta property="og:description" content="$description">
@@ -18,21 +18,21 @@
 </head>
 <body class="$body_class">
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-layout">
   <header class="site-header">
-    <div class="header-inner">
-      <a class="wordmark" href="${prefix}index.html" aria-label="Rui Yu — home">rui yu<span class="wordmark-dot">.</span></a>
+      <p class="nav-label">Navigation</p>
       <nav aria-label="Main navigation">
-        <a href="${prefix}index.html#research">Research</a>
+        <a href="${prefix}index.html">Home</a>
+        <a href="${prefix}index.html#bio">Bio</a>
+        <a href="${prefix}index.html#publications">Publications</a>
         <a href="${prefix}index.html#projects">Projects</a>
-        <a href="${prefix}index.html#about">About</a>
-        <a class="nav-cv" href="${prefix}cv.html"$cv_current>CV <span aria-hidden="true">↗</span></a>
+        <a href="${prefix}cv.html"$cv_current>CV</a>
       </nav>
-    </div>
   </header>
   <main id="main">$content</main>
   <footer class="site-footer">
-    <div><a class="wordmark" href="${prefix}index.html">rui yu<span class="wordmark-dot">.</span></a><p>Computer vision · Machine learning · 3D geometry</p></div>
-    <div class="footer-links"><a href="mailto:$email">Email</a><a href="$github">GitHub</a><a href="$scholar">Google Scholar</a><span>Updated $updated</span></div>
+    <p>Updated $updated</p>
   </footer>
+  </div>
 </body>
 </html>
