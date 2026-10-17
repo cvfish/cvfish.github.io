@@ -62,37 +62,31 @@ def page(path, title, description, content, prefix="", body_class=""):
     target.write_text(output)
 
 def publication(p):
-    award = f'<span class="award">{e(p["award"])}</span>' if p["award"] else ""
-    note = f'<p class="pub-note">{e(p["note"])}</p>' if p["note"] else ""
+    award = f' · <span class="award">{e(p["award"])}</span>' if p["award"] else ""
     title_url = local_link(next((link["url"] for link in p["links"] if link["label"] == "Project"), p["links"][0]["url"]))
-    return f'''<article class="publication" id="{e(p['id'])}" data-publication data-category="{e(p['category'])}">
-      <div class="pub-year">{p['year']}</div>
-      <a class="pub-image" href="{e(title_url)}" tabindex="-1" aria-hidden="true">{image(p['image'], '')}</a>
-      <div class="pub-content"><p class="pub-meta"><span>{e(p['short_venue'])}</span>{award}</p>
+    return f'''<li class="publication" id="{e(p['id'])}" data-publication>
       <h3 class="pub-title"><a href="{e(title_url)}">{e(p['title'])}</a></h3>
-      <p class="pub-authors">{authors(p['authors'])}</p><p class="pub-description">{e(p['description'])}</p>
-      {links(p['links'])}{note}</div></article>'''
+      <p class="pub-meta">{e(p['short_venue'])} {p['year']}{award}</p>
+      {links(p['links'])}</li>'''
 
 def home():
-    project_html = "".join(f'''<article class="project"><a class="project-visual" href="{e(p['video'])}" aria-label="Watch {e(p['title'])}">{image(p['image'],p['alt'])}</a>
-      <span class="kicker">{e(p['category'])}</span><h3><a href="{e(p['video'])}">{e(p['title'])}</a></h3>
-      <p>{e(p['description'])}</p><a class="text-link" href="{e(p['video'])}">Watch demo <span aria-hidden="true">↗</span></a></article>''' for p in projects)
-    timeline = "".join(f'<div class="timeline-row"><dt>{e(item["organization"])}</dt><dd>{e(item.get("role", item.get("degree", "")))}</dd><dd>{e(item["period"])}</dd></div>' for item in profile["experience"] + profile["education"][:1])
-    content = f'''<section class="hero" aria-labelledby="name">
-      <div><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>{e(profile['role'])} / {e(profile['company'])}</p>
-      <h1 id="name">{e(profile['name'])}<span class="wordmark-dot">.</span></h1><p class="intro">{e(profile['intro'])}</p>
-      <div class="hero-links"><a class="primary-link" href="mailto:{e(profile['email'])}">Get in touch <span aria-hidden="true">↗</span></a><a href="{e(profile['scholar'])}">Scholar <span aria-hidden="true">↗</span></a><a href="{e(profile['github'])}">GitHub <span aria-hidden="true">↗</span></a><a href="cv.html">CV <span aria-hidden="true">↗</span></a></div></div>
-      <aside class="hero-aside">{image('ryu_files/circle.png','Portrait of Rui Yu',cls='hero-portrait',eager=True)}<div><p class="aside-label">Computer vision, in 3D.</p><p>Geometry, motion, and learning<br>from images and video.</p></div></aside>
-    </section><div class="expertise" aria-label="Research interests">{''.join('<span>'+e(x)+'</span>' for x in profile['interests'])}</div>
-    <section id="research" class="section" aria-labelledby="research-title"><div class="section-heading"><span class="section-number">01</span><h2 id="research-title">Research & publications</h2><a href="{e(profile['scholar'])}">Google Scholar <span aria-hidden="true">↗</span></a></div>
-    <p class="section-intro">My research explores how to recover the structure and motion of 3D scenes from images and monocular video, alongside work in optimization, tracking, and computational imaging.</p>
-    <div class="research-tools" data-research-tools hidden><div class="filters" role="group" aria-label="Filter publications by topic"><button class="filter" data-filter="all" aria-pressed="true">All work</button><button class="filter" data-filter="3d" aria-pressed="false">3D vision</button><button class="filter" data-filter="optimization" aria-pressed="false">Optimization</button><button class="filter" data-filter="imaging" aria-pressed="false">Imaging</button></div><label class="search-label"><span>Search publications</span><input type="search" placeholder="Search publications…" autocomplete="off"></label></div>
-    <p class="result-count" role="status" aria-live="polite" data-result-count hidden></p><div class="publications">{''.join(publication(p) for p in papers)}</div><p class="no-results" data-no-results hidden>No publications match. Try another topic or search term.</p>
-    <article class="thesis">{image('ryu_files/thesis_crop.png','Cover of Rui Yu’s PhD thesis')}<div><span class="kicker">PhD thesis · University College London</span><h3>Learning Dense 3D Models from Monocular Video</h3><p>Reconstructing dense, detailed 3D shapes from a single camera: from segmenting dynamic scenes into objects to tracking the deformation of non-rigid surfaces.</p><a href="{e(local_link('papers/thesis_RuiYu.pdf'))}">Read thesis <span aria-hidden="true">↗</span></a></div></article></section>
-    <section id="projects" class="section" aria-labelledby="projects-title"><div class="section-heading"><span class="section-number">02</span><h2 id="projects-title">Earlier projects</h2></div><p class="section-intro">A few systems from my earlier work, bringing geometric vision into real-time applications.</p><div class="project-grid">{project_html}</div></section>
-    <section id="about" class="section" aria-labelledby="about-title"><div class="section-heading"><span class="section-number">03</span><h2 id="about-title">A little background</h2></div><div class="about-grid"><div class="about-copy"><p>{e(profile['background'])}</p><p>My interests span geometric computer vision, machine learning, optimization, and deep learning, including dynamic scene reconstruction, multi-object detection and tracking, and synthetic aperture imaging.</p><a class="text-link" href="cv.html">View curriculum vitae <span aria-hidden="true">↗</span></a></div><dl class="timeline">{timeline}</dl></div></section>
-    <section class="contact-band" aria-labelledby="contact-title"><div><h2 id="contact-title">Let’s connect.</h2><p>For research and professional enquiries.</p></div><a href="mailto:{e(profile['email'])}">{e(profile['email'])} <span aria-hidden="true">↗</span></a></section>'''
-    page("index.html", "Rui Yu — Computer Vision & Machine Learning", f"Rui Yu, {profile['role']} at {profile['company']}. 3D computer vision, machine learning, research, and projects.", content)
+    project_html = "".join(f'''<li><h3><a href="{e(p['video'])}">{e(p['title'])}</a></h3>
+      <p>{e(p['description'])}</p><a href="{e(p['video'])}">Watch demo</a></li>''' for p in projects)
+    content = f'''<header class="home-header"><h1>{e(profile['name'])}</h1>
+      <p class="intro">I am a <strong>{e(profile['role'])}</strong> at <strong>{e(profile['company'])}</strong>. {e(profile['intro'])}</p></header>
+    <section id="about"><h2 id="bio">Bio</h2><p>{e(profile['background'])}</p>
+      <p>You can find more about my experience and education in my <a href="cv.html">CV</a> (<a href="files/rui-yu-cv.pdf">PDF</a>).</p></section>
+    <section id="research"><h2 id="publications">Publications</h2>
+      <ol class="publications">{''.join(publication(p) for p in papers)}</ol>
+      <p class="thesis"><strong>PhD thesis:</strong> <a href="{e(local_link('papers/thesis_RuiYu.pdf'))}">Learning Dense 3D Models from Monocular Video</a> (UCL, 2017).</p></section>
+    <section id="projects"><h2>Earlier projects</h2><ul class="project-list">{project_html}</ul></section>
+    <section class="links-section"><h2>Links</h2><ul>
+      <li><a href="mailto:{e(profile['email'])}">{e(profile['email'])}</a></li>
+      <li><a href="{e(profile['github'])}">GitHub</a></li>
+      <li><a href="{e(profile['scholar'])}">Google Scholar</a></li>
+      <li><a href="cv.html">CV</a> / <a href="files/rui-yu-cv.pdf">PDF</a></li>
+    </ul></section>'''
+    page("index.html", "Rui Yu — Computer Vision & Machine Learning", f"Rui Yu, {profile['role']} at {profile['company']}. 3D computer vision, machine learning, research, and projects.", content, body_class="home-page")
 
 def cv():
     def items(values, education=False):
