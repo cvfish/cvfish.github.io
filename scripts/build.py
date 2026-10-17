@@ -1,6 +1,7 @@
 """Build the static homepage with Python's standard library only."""
 from html import escape, unescape
 from pathlib import Path
+import hashlib
 import json
 import re
 from string import Template
@@ -12,6 +13,7 @@ profile = json.loads((ROOT / "data/profile.json").read_text())
 papers = json.loads((ROOT / "data/publications.json").read_text())
 projects = json.loads((ROOT / "data/projects.json").read_text())
 template = Template((ROOT / "templates/base.html").read_text())
+asset_versions = {name: hashlib.sha256((OUT / "assets" / name).read_bytes()).hexdigest()[:12] for name in ("site.css", "site.js")}
 manifest_file = ROOT / "migration/manifest.json"
 manifest = json.loads(manifest_file.read_text()) if manifest_file.exists() else {"files": []}
 origins = {item["path"].removeprefix("public/"): item["url"] for item in manifest["files"] if item.get("path", "").startswith("public/")}
@@ -56,7 +58,8 @@ def page(path, title, description, content, prefix="", body_class=""):
     output = template.substitute(title=e(title), description=e(description), prefix=prefix,
         site_url=e(profile["site_url"]), canonical=e(profile["site_url"] + "/" + canonical_path),
         body_class=body_class, content=content, cv_current=' aria-current="page"' if path == "cv.html" else "",
-        email=e(profile["email"]), github=e(profile["github"]), scholar=e(profile["scholar"]), updated=e(profile["updated"]))
+        email=e(profile["email"]), github=e(profile["github"]), scholar=e(profile["scholar"]), updated=e(profile["updated"]),
+        css_version=asset_versions["site.css"], js_version=asset_versions["site.js"])
     target = OUT / path
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(output)
