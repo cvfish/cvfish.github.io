@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Direct, Dense, and Deformable: Template-Based Non-Rigid 3D Reconstruction
+from RGB Video</title>
+
+    <style>
+      div {width: 1024; margin-left:auto; margin-right:auto;}
+    </style>
+
+    <script type="text/javascript">
+      function resize() {
+      // called onload, resize main container if browser window is too small
+      if (document.body.clientWidth < 1024)
+                                      {
+                                      document.getElementById('main').style.width= document.body.clientWidth + "px";
+                                      document.getElementById('main').style.marginLeft= "0";
+                                      }
+                                      }
+                                      </script>
+
+
+  </head>
+  <!-- <body onload="javascript:resize();"> -->
+<body>
+  <div id="main">
+      <!-- <hr> -->
+      <center>
+      <h1>Direct, Dense, and Deformable: Template-Based Non-Rigid 3D Reconstruction
+from RGB Video</h1>
+      </center>
+      <!-- <p> -->
+      <!--   This webpage demonstrates our piecewise rigid 3D reconstruction results. The corresponding -->
+      <!--   paper was presented in ECCV 2014 as an oral: -->
+      <!-- </p> -->
+      <center>
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/">Rui Yu</a>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="https://scholar.google.com/citations?user=RM2sHhYAAAAJ&hl/">Chris Russell</a>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="http://cs.bath.ac.uk/~nc537/">Neill D.F. Campbell</a>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="http://www.cs.ucl.ac.uk/staff/L.Agapito/">Lourdes Agapito</a> <br>
+      </center>
+
+<br>
+<br>
+
+      <center>
+        <!-- <img src="/home/cvfish/work/Writing_up/youtube_final/pics/fig_cat6.png" "height="400" width="700"  class="noshadow"> -->
+        <img src="iccv2015.png" "height="400" class="noshadow" width="1024">
+                                                                                                                       </center>
+<br>
+
+<!-- <h3> Abstract</h3> -->
+<h2> Abstract</h2>
+
+<p align="justify">
+In this paper we tackle the problem of capturing the
+dense, detailed 3D geometry of generic, complex non-rigid
+meshes using a single RGB-only commodity video camera
+and a direct approach. While robust and even real-time solutions
+exist to this problem if the observed scene is static,
+for non-rigid dense shape capture current systems are typically
+restricted to the use of complex multi-camera rigs,
+take advantage of the additional depth channel available in
+RGB-D cameras, or deal with specific shapes such as faces
+or planar surfaces. In contrast, our method makes use of
+a single RGB video as input; it can capture the deformations
+of generic shapes; and the depth estimation is dense,
+per-pixel and direct. We first compute a dense 3D template
+of the shape of the object, using a short rigid sequence, and
+subsequently perform online reconstruction of the non-rigid
+mesh as it evolves over time. Our energy optimization approach
+minimizes a robust photometric cost that simultaneously
+estimates the temporal correspondences and 3D deformations
+with respect to the template mesh. In our experimental
+evaluation we show a range of qualitative results on
+novel datasets; we compare against an existing method that
+requires multi-frame optical flow; and perform a quantitative
+evaluation against other template-based approaches on
+a ground truth dataset.
+</p>
+<br>
+<h2>Publication</h2>
+<b>Direct, Dense, and Deformable: Template-Based Non-Rigid 3D Reconstruction
+from RGB Video</b><br>
+Rui Yu, Chris Russell, Neill D. F. Campbell, Lourdes Agapito<br>
+International Conference on Computer Vision(ICCV) 2015.<a></a><br>
+<a href="direct_nrsfm.pdf">paper</a>,
+<a href="https://github.com/cvfish/PangaeaTracking">code</a> <br>
+<br>
+<div class="h2"><h2>Results </h2></div>
+
+<!-- <video loop="true" autoplay="true" src="1046_video.mp4" controls="controls" style="border: black 0px solid; margin: 0px" width="100%"> </video> -->
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/O9VV3FFWiGU" frameborder="0" allowfullscreen></iframe>
+
+<br>
+
+<!-- <div class="h2"><h2><a href="VideoPopup_results.html">More Results</h2></div> -->
+
+<!-- <table> -->
+<!-- <tbody> -->
+<!-- <tr> -->
+<!-- <td> -->
+<!-- <embed width="510" height="288" src="http://www.youtube.com/v/OSUNTw4pQ7o"> -->
+<!-- </td> -->
+<!-- <td> -->
+<!-- <embed width="510" height="288" src="http://www.youtube.com/v/OSUNTw4pQ7o"> -->
+<!-- </td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td> -->
+<!--   <center> -->
+<!-- cat sequence -->
+<!-- </center> -->
+<!-- </td> -->
+<!-- <td> -->
+<!-- <center> -->
+<!-- motorbike sequence -->
+<!-- </center> -->
+<!-- </td> -->
+<!-- </tr> -->
+
+<!-- <tr> -->
+<!-- <td> -->
+<!-- <embed width="510" height="288" src="http://www.youtube.com/v/OSUNTw4pQ7o"> -->
+<!-- </td> -->
+<!-- <td> -->
+<!-- <embed width="510" height="288" src="http://www.youtube.com/v/OSUNTw4pQ7o"> -->
+<!-- </td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td> -->
+<!--   <center> -->
+<!-- messi sequence -->
+<!-- </center> -->
+<!-- </td> -->
+<!-- <td> -->
+<!-- <center> -->
+<!-- synthetic dancer sequence -->
+<!-- </center> -->
+<!-- </td> -->
+<!-- </tr> -->
+<!-- </tbody></table> -->
+
+<!-- <video width="100%" loop = "true" autoplay="true" src="http://www.eecs.qmul.ac.uk/~rgarg/Variational_NRSfM/face_real_shading.ogv"  controls="controls" loop style="border: black 0px solid; margin: 0px"> </video> -->
+
+<!-- <br><hr><br> -->
+
+
+<!-- <br><br> -->
+
+
+<!-- <h2>3D Reconstruction Results for cat sequence</h2> -->
+<!-- <br> -->
+
+<!-- <\!-- <iframe width="1024" height="576" src="//www.youtube.com/embed/35wCPFyS3QQ" frameborder="0" allowfullscreen></iframe> -\-> -->
+<!-- <\!-- <object width="1024" height="576" data="//http://www.youtube.com/v/35wCPFyS3QQ"></object> -\-> -->
+<!-- <embed width="1024" height="576" src="http://www.youtube.com/v/35wCPFyS3QQ"> -->
+
+<!--   <br> -->
+<!--   Input video of "beating heart" courtesy of Dan Stoyanov. -->
+<!--   Available for download from the Hamlyn Centre Laparoscopic Video Dataset  -->
+<!--   Page: http://hamlyn.doc.ic.ac.uk/vision/ -->
+<!--   <br><br><hr><br> -->
+<!--   <h2>3D Reconstruction Results for synthetic sequence</h2> -->
+<!--   <\!-- <iframe width="1024" height="576" src="//www.youtube.com/embed/OSUNTw4pQ7o" frameborder="0" allowfullscreen></iframe> -\-> -->
+<!--   <embed width="1024" height="576" src="http://www.youtube.com/v/OSUNTw4pQ7o"> -->
+
+<!--     <br><br> -->
+
+<!--     <hr> -->
+<!--     <br><br> -->
+
+
+<!--     <br> -->
+<!--     <address>Page created by Ravi Garg</address>  -->
+<!--     <address>Last modified: 16 Oct 2013</address> -->
+<!--     <address>For comments or questions, please contact <a href="http://www.eecs.qmul.ac.uk/%7Ergarg/">Ravi Garg</a>: -->
+<!--     </address> -->
+<!--     <address>rgarg@eecs.qmul.ac.uk<br> -->
+<!--     </address> -->
+<!-- </div> -->
+
+<!-- <p align="justify"> -->
+<!-- <\!-- hitwebcounter Code START -\-> -->
+<!-- <a href="http://www.hitwebcounter.com/" target="_blank"> -->
+<!-- <img src="http://hitwebcounter.com/counter/counter.php?page=4834081&style=0007&nbdigits=5&type=ip&initCount=0" title="" Alt=""   border="0" > -->
+<!-- </a> -->
+<!-- </p> -->
+
+
+</div></body></html>

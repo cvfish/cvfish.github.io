@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta name="viewport" content="“width=800”">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <!-- <link rel="icon" type="image/png" href="https://jonbarron.info/seal_icon.png"> -->
+  <title>Rui Yu</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="ryu_files/css.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <table width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+    <tbody><tr>
+    <td>
+      <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
+      <tbody><tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+          <name>Rui Yu</name>
+        </p>
+        <p>I am a computer vision engineer at <a href="https://www.apple.com/">Apple</a>, where I work on 3D computer vision and machine learning. Before that, I worked in <a href="https://www.dji.com/">DJI</a> for about a year, working on 3D vision.
+        </p>
+        <p>
+          I did my PhD at <a href="https://www.ucl.ac.uk/">University College London</a>, where I was advised by <a href="http://www0.cs.ucl.ac.uk/staff/L.Agapito/">Lourdes Agapito</a> and <a href="https://scholar.google.com/citations?user=RM2sHhYAAAAJ&hl/">Chris Russell</a>.
+          Before that, I obtained my BSc and MSc from Northwestern Polytechnical University in 2009 and 2012 respectively, under the supervision of Prof. Yanning Zhang and Prof. <a href="http://www.saiip-vision.org/tyang/index.html">Tao Yang</a>.
+        </p>
+        <p align="center">
+          <a href="mailto:r.yu@cs.ucl.ac.uk">Email</a> &nbsp;/&nbsp;
+          <a href="ryu_files/cv_ruiyu_detailed.pdf">CV</a> &nbsp;/&nbsp;
+          <a href="https://scholar.google.com/citations?user=M0xPL9cAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp;/&nbsp;
+          <a href="https://github.com/cvfish"> GitHub </a>
+        </p>
+        </td>
+        <td width="33%">
+        <img src="ryu_files/circle.png">
+        </td>
+      </tr>
+      </tbody></table>
+      <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
+      <tbody><tr>
+        <td width="100%" valign="middle">
+          <heading>Research</heading>
+          <p>
+            I'm interested in computer vision, machine learning, optimization,
+            deep learning and geometric vision. My research focus is about
+            inferring the dynamic 3D scene structure from images or monocular
+            video. I have also worked in multiple object detection, tracking,
+            and synthetic aperture imaging. <!-- Representative papers -->
+            <!-- are <span class="highlight">highlighted</span>. -->
+          </p>
+        </td>
+      </tr>
+      </tbody></table>
+
+  <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
+
+    <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+      <td width="25%">
+        <div class="one">
+        <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/ijcv_crop_new.png"></div>
+        <img src="ryu_files/ijcv_crop_new.png">
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td width="75%" valign="top">
+	  <a href="https://arxiv.org/pdf/1708.01654.pdf">
+            <papertitle>Better Together: Joint Reasoning for Non-rigid 3D Reconstruction with Specularities and Shading</papertitle>
+	  </a>
+	  <br>
+
+    <a href="http://www0.cs.ucl.ac.uk/staff/Qi.Liu/">Qi Liu-Yin*</a>,
+    <strong>Rui Yu*</strong>,
+	  <a href="http://www0.cs.ucl.ac.uk/staff/L.Agapito/">Lourdes Agapito</a>,
+	  <a href="https://www.microsoft.com/en-us/research/people/awf/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fawf%2F/">Andrew Fitzgibbon</a>,
+	  <a href="https://scholar.google.com/citations?user=RM2sHhYAAAAJ&hl/">Chris Russell</a>
+    <br>
+        <em>Submitted to Special Issue of International Journal of Computer Vision </em>
+        <!-- <em>British Machine Vision Conference (BMVC)</em>, 2016 -->
+        <br>
+        <!-- <p></p> -->
+        <p>We demonstrate the use of shape-from-shading (SfS) to improve both the quality and the robustness of 3D reconstruction of dynamic objects captured by a single camera.</p>
+      </td>
+    </tr>
+
+    <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+      <td width="25%">
+        <div class="one">
+        <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/bmvc_crop_new.png"></div>
+        <img src="ryu_files/bmvc_crop_new.png">
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td width="75%" valign="top">
+	  <a href="http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/better_together.pdf">
+            <papertitle>Better Together: Joint Reasoning for Non-rigid 3D Reconstruction with Specularities and Shading</papertitle>
+	  </a>
+	  <br>
+
+    <a href="http://www0.cs.ucl.ac.uk/staff/Qi.Liu/">Qi Liu-Yin</a>,
+    <strong>Rui Yu</strong>,
+	  <a href="http://www0.cs.ucl.ac.uk/staff/L.Agapito/">Lourdes Agapito</a>,
+	  <a href="https://www.microsoft.com/en-us/research/people/awf/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fawf%2F/">Andrew Fitzgibbon</a>,
+	  <a href="https://scholar.google.com/citations?user=RM2sHhYAAAAJ&hl/">Chris Russell</a>
+
+    <br>
+        <em>British Machine Vision Conference (BMVC)</em>, 2016 &nbsp; <font color="#FF8080"><strong>(Best Poster)</strong></font> <br>
+        <br>
+        <a href="http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/better_together.pdf">paper</a>
+        /
+        <a href="http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/better_together.html">website</a>
+        /
+        <a href="https://github.com/qilon/PangaeaTracking">code</a>
+        /
+        <a href="http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/synth_datasets.zip">data</a>
+        <p>This paper is subsumed by our IJCV submission.</p>
+      </td>
+      </tr>
+
+    <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+      <td width="25%">
+        <div class="one">
+        <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/jigsaw_puzzle_crop.png"></div>
+        <img src="ryu_files/jigsaw_puzzle_crop.png">
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td width="75%" valign="top">
+	  <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/jigsaw/Jigsaw_final_compressed.pdf">
+      <papertitle>Solving Jigsaw Puzzles with Linear Programming</papertitle>
+	  </a>
+	  <br>
+
+    <strong>Rui Yu</strong>,
+	  <a href="https://scholar.google.com/citations?user=RM2sHhYAAAAJ&hl/">Chris Russell</a>,
+    <a href="http://www0.cs.ucl.ac.uk/staff/L.Agapito/">Lourdes Agapito</a>
+
+    <br>
+        <em>British Machine Vision Conference (BMVC)</em>, 2016 &nbsp; <font color="#FF8080"><strong>(Oral)</strong></font> <br>
+        <br>
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/jigsaw/Jigsaw_final_compressed.pdf">paper</a>
+        /
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/jigsaw/Jigsaw_sup_bmvc_final.pdf">supplementary_material</a>
+        /
+        <a href="http://arxiv.org/abs/1511.04472">longer version</a>
+        <p>We propose a novel Linear Program (LP) based formulation for solving
+        jigsaw puzzles. In contrast to existing greedy methods, our LP solver
+        exploits all the pairwise matches simultaneously, and computes the
+        position of each piece/component globally.
+        </p>
+      </td>
+      </tr>
+
+     <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+      <td width="25%">
+        <div class="one">
+        <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/iccv_crop.png"></div>
+        <img src="ryu_files/iccv_crop.png">
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td width="75%" valign="top">
+	  <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/direct_nrsfm.pdf">
+      <papertitle>Direct, Dense, and Deformable: Template-Based Non-Rigid 3D Reconstruction from RGB Video</papertitle>
+	  </a>
+	  <br>
+
+    <strong>Rui Yu</strong>,
+	  <a href="https://scholar.google.com/citations?user=RM2sHhYAAAAJ&hl/">Chris Russell</a>,
+    <a href="http://cs.bath.ac.uk/~nc537/">Neill D. F. Campbell</a>,
+    <a href="http://www0.cs.ucl.ac.uk/staff/L.Agapito/">Lourdes Agapito</a>
+
+    <br>
+        <em>International Conference on Computer Vision (ICCV)</em>, 2015
+        <br>
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/direct_nrsfm.pdf">paper</a>
+        /
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/direct_nrsfm.html">website</a>
+        /
+        <a href="https://github.com/cvfish/PangaeaTracking">code</a>
+        /
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/pami-compressed.pdf">longer version</a>
+    <p>
+      In this paper we tackle the problem of capturing the dense, detailed 3D
+      geometry of generic, complex non-rigid meshes using a single RGB-only
+      commodity video camera and a direct approach. <!-- We first compute a dense 3D -->
+      <!-- template of the shape of the object, using a short rigid sequence, and -->
+      <!-- subsequently perform online reconstruction of the non-rigid mesh as it -->
+      <!-- evolves over time. -->
+        </p>
+      </td>
+      </tr>
+
+     <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+      <td width="25%">
+        <div class="one">
+        <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/video_popup_crop.png"></div>
+        <img src="ryu_files/video_popup_crop.png">
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td width="75%" valign="top">
+	  <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPopup.pdf">
+      <papertitle>Video Pop-­up: Monocular 3D Reconstruction of Dynamic Scenes</papertitle>
+	  </a>
+	  <br>
+
+	  <a href="https://scholar.google.com/citations?user=RM2sHhYAAAAJ&hl/">Chris Russell*</a>,
+    <strong>Rui Yu*</strong>,
+    <a href="http://www0.cs.ucl.ac.uk/staff/L.Agapito/">Lourdes Agapito</a>
+
+    <br>
+        <em>European Conference on Computer Vision (ECCV)</em>, 2014 &nbsp; <font color="#FF8080"><strong>(Oral)</strong></font> <br>
+        <br>
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPopup.pdf">paper</a>
+        /
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPopup2.html">website</a>
+        /
+        <a href="https://github.com/cvfish/VideoPopup">code</a>
+        /
+        <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPopup_pami-compressed.pdf">longer version</a>
+    <p>
+In this paper we propose an unsupervised approach to the challenging problem of
+simultaneously segmenting the scene into its constituent objects and
+reconstructing a 3D model of the scene. <!-- We formulate the problem as hierarchical -->
+<!-- graph-cut based segmentation where we decompose the whole scene into background -->
+<!-- and foreground objects and model the complex motion of non-rigid or articulated -->
+<!-- objects as a set of overlapping rigid parts. -->
+        </p>
+      </td>
+      </tr>
+
+
+     <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+         <td width="25%">
+           <div class="one">
+             <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/SAI_eccv14_crop.png"></div>
+             <img src="ryu_files/SAI_eccv14_crop.png">
+           </div>
+           <script type="text/javascript">
+             function aperture_start() {
+             document.getElementById('aperture_image').style.opacity = "1";
+             }
+             function aperture_stop() {
+             document.getElementById('aperture_image').style.opacity = "0";
+             }
+             aperture_stop()
+           </script>
+         </td>
+         <td width="75%" valign="top">
+	         <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/AllSAI.pdf">
+             <papertitle> All-in-Focus Synthetic Aperture Imaging</papertitle>
+	         </a>
+	         <br>
+
+	         <a href="http://www.saiip-vision.org/tyang/index.html">Tao Yang</a>,
+           <a href="http://www.saiip-vision.org/tyang/index.html">Yanning Zhang</a>,
+           <a href="http://www.saiip-vision.org/tyang/index.html">Jingyi Yu</a>,
+           <a href="http://www.saiip-vision.org/tyang/index.html">Jing Li</a>,
+           <a href="http://www.saiip-vision.org/tyang/index.html">Xiaomin Tong</a>,
+           <strong>Rui Yu</strong>
+
+           <br>
+           <em>European Conference on Computer Vision (ECCV)</em>, 2014
+           <br>
+           <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/AllSAI.pdf">paper</a>
+           <p>
+             In this paper, we present a novel depth free all-in-focus SAI
+             technique based on light field visibility analysis.
+           </p>
+         </td>
+       </tr>
+
+     <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+         <td width="25%">
+           <div class="one">
+             <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/hybridarray_crop.jpg"></div>
+             <img src="ryu_files/hybridarray_crop.jpg">
+           </div>
+           <script type="text/javascript">
+             function aperture_start() {
+             document.getElementById('aperture_image').style.opacity = "1";
+             }
+             function aperture_stop() {
+             document.getElementById('aperture_image').style.opacity = "0";
+             }
+             aperture_stop()
+           </script>
+         </td>
+         <td width="75%" valign="top">
+           <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/IVC2014.pdf">
+             <papertitle> Simultaneous active camera array focus plane estimation and occluded moving object imaging</papertitle>
+	         </a>
+	         <br>
+
+
+	         <a href="http://www.saiip-vision.org/tyang/index.html">Tao Yang</a>,
+           Yanning Zhang,
+           <strong>Rui Yu</strong>,
+           Xiaoqiang Zhang,
+           Ting Chen,
+           Lingyan Ran,
+           Zhengxi Song,
+           Wenguang Ma
+
+           <br>
+           <em>Image and Vision Computing</em>, 2014
+           <br>
+           <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/IVC2014.pdf">paper</a>
+           <p>
+             Automatically focusing and seeing occluded moving object in
+             cluttered and complex scene is a significant challenging task for
+             many computer vision applications. In this paper, we present a
+             novel synthetic aperture imaging approach to solve this problem.
+           </p>
+         </td>
+       </tr>
+
+
+     <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+         <td width="25%">
+           <div class="one">
+             <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/focus_crop.jpg"></div>
+             <img src="ryu_files/focus_crop.jpg">
+           </div>
+           <script type="text/javascript">
+             function aperture_start() {
+             document.getElementById('aperture_image').style.opacity = "1";
+             }
+             function aperture_stop() {
+             document.getElementById('aperture_image').style.opacity = "0";
+             }
+             aperture_stop()
+           </script>
+         </td>
+         <td width="75%" valign="top">
+	         <a href="ryu_files/exploiting_loops_IJARS.pdf">
+             <papertitle> Exploiting Loops in the Camera Array for Automatic Focusing Depth Estimation</papertitle>
+	         </a>
+	         <br>
+
+	         <a href="http://www.saiip-vision.org/tyang/index.html">Tao Yang</a>,
+           Yanning Zhang,
+           <strong>Rui Yu</strong>,
+           Ting Chen
+
+           <br>
+           <em>International Journal of Advanced Robotic Systems</em>, 2013
+           <br>
+           <a href="ryu_files/exploiting_loops_IJARS.pdf">paper</a>
+           <p>
+             Automatically focusing and seeing occluded moving object in
+             cluttered and complex scene is a significant challenging task for
+             many computer vision applications. In this paper, we present a
+             novel synthetic aperture imaging approach to solve this problem.
+           </p>
+         </td>
+       </tr>
+
+     <tbody><tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+         <td width="25%">
+           <div class="one">
+             <div class="two" id="aperture_image" style="opacity: 0;"><img src="ryu_files/system_crop.png"></div>
+             <img src="ryu_files/system_crop.png">
+           </div>
+           <script type="text/javascript">
+             function aperture_start() {
+             document.getElementById('aperture_image').style.opacity = "1";
+             }
+             function aperture_stop() {
+             document.getElementById('aperture_image').style.opacity = "0";
+             }
+             aperture_stop()
+           </script>
+         </td>
+         <td width="75%" valign="top">
+	         <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/AllSAI.pdf">
+             <papertitle> Continuously tracking and see-through occlusion based
+             on a new hybrid synthetic aperture imaging model</papertitle>
+	         </a>
+	         <br>
+
+	         <a href="http://www.saiip-vision.org/tyang/index.html">Tao Yang</a>,
+           Yanning Zhang,
+           Xiaomin Tong,
+           Xiaoqiang Zhang,
+           <strong>Rui Yu</strong>
+
+           <br>
+           <em>International Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2011
+           <br>
+           <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/CVPR2011.pdf">paper</a>
+           <p>
+             Robust detection and tracking of multiple people in clut- tered and
+             crowded scenes with severe occlusion is a sig- nificant challenging task for
+             many computer vision appli- cations. In this paper, we present a novel hybrid
+             synthetic aperture imaging model to solve this problem.
+           </p>
+         </td>
+       </tr>
+
+     </table>
+
+      <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
+      <tbody><tr>
+        <td>
+        <heading>PhD Thesis</heading>
+        </td>
+      </tr>
+      </tbody></table>
+      <table width="100%" cellpadding="20" border="0" align="center">
+      <tbody><tr>
+          <td width="25%"><img src="ryu_files/thesis_crop.png" alt="prl" width="160" height="200"></td>
+        <td width="75%" valign="top">
+        <p>
+          <a href="http://www0.cs.ucl.ac.uk/staff/R.Yu/papers/thesis_RuiYu.pdf">
+          <papertitle>Learning Dense 3D Models from Monocular Video</papertitle>
+          </a>
+          <br>
+          <strong>Rui Yu</strong>
+        </p><p>
+            <!-- <br> -->
+            In this thesis, we present two pieces of work for reconstructing
+            dense generic shapes from monocular sequences. In the first work, we
+            propose an unsupervised approach to the challenging problem of
+            simultaneously segmenting the scene into its constituent objects and
+            reconstructing a 3D model of the scene. In the second work, we
+            propose a direct approach for capturing the dense, detailed 3D
+            geometry of generic, complex non-rigid meshes using a single camera.
+        </p>
+        <p></p>
+        </td>
+      </tr>
+      </tbody></table>
+
+
+
+      <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
+      <tbody><tr>
+        <td>
+        <heading>Projects</heading>
+        </td>
+      </tr>
+      </tbody></table>
+      <table width="100%" cellpadding="20" border="0" align="center">
+      <tbody><tr>
+        <td width="25%"><img src="ryu_files/3d.jpg" alt="pacman" width="240" height="160"></td>
+        <td width="75%" valign="center">
+        <p>
+          <a href="https://www.youtube.com/watch?v=kFf0hBThsZQ">
+          <papertitle>Real time multi-view 3d reconstruction</papertitle>
+          </a>
+          <br>
+          <a href="https://www.youtube.com/watch?v=kFf0hBThsZQ">
+            video
+          </a>
+          <br>
+          We have developed an approach to accelerate 3D reconstruction by
+          introducing a mechanism of vertices sharing during the process of
+          traditional voxel splitting. Our system can run at 10fps with 8
+          cameras on a PC with configuration: i7-950 CPU, 4G RAM.
+          <br>
+        </p>
+        </td>
+      </tr>
+      </tbody>
+
+      <tbody><tr>
+          <td width="25%"><img src="ryu_files/UAV.jpg" alt="pacman" width="240" height="200"></td>
+        <td width="75%" valign="center">
+        <p>
+          <a href="https://www.youtube.com/watch?v=rYg99jvsnnI">
+          <papertitle>Real time vision-based UAV landing</papertitle>
+          </a>
+          <br>
+          <a href="https://www.youtube.com/watch?v=rYg99jvsnnI">
+            video
+          </a>
+          <br>
+          we developed a real-time vision-based UAV autonomous landing system.
+          autonomous Different from traditional vision-based UAV landing
+          guidance system, our system UAV Landing uses visible remote super
+          brightness flashlight instead of infra-red light. Effective
+          localization result can be as far as 400m even in a strong lighting
+          environment. Accuracy of our localization result was demonstrated by
+          the safe landing of our UAV without using Differential GPS. With this
+          technology we participated AVIC Cup-International UAV Innovation Grand
+          Prix.
+
+          <br>
+        </p>
+        </td>
+      </tr>
+      </tbody>
+
+      <tbody><tr>
+          <td width="25%"><img src="ryu_files/tracking.jpg" alt="pacman" width="240" height="200"></td>
+        <td width="75%" valign="center">
+        <p>
+          <a href="https://www.youtube.com/watch?v=LWBby8u-aKA">
+          <papertitle>Multi-camera, multi-people detection, imaging and tracking</papertitle>
+          </a>
+          <a href="https://www.youtube.com/watch?v=LWBby8u-aKA">
+          <br>
+          video
+          </a>
+          <br>
+          we developed a real-time multi-camera multi-people detection,
+          synthetic aperture imaging and tracking system. A novel hybrid
+          synthetic aperture imaging model was proposed to solve occlusion
+          challenges. A network camera based hybrid synthetic aperture imaging
+          system has been set up, and experimental results with qualitative and
+          quantitative analysis demonstrate that the method can reliably locate
+          and see people in challenge scene. Research results were published on
+          CVPR 2011.
+
+          <br>
+        </p>
+        </td>
+      </tr>
+      </tbody>
+
+      </table>
+
+  <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
+  <tbody><tr>
+    <td>
+      <br>
+      <p align="right"><font size="2">
+		    <a href="http://jonbarron.info/">Website template comes from Jon Barron.</a>
+      </font>
+      </p>
+    </td>
+  </tr>
+  </tbody></table>
+  </td>
+  </tr>
+</tbody></table>
+
+
+</body></html>
