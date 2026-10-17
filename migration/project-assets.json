@@ -1,0 +1,50 @@
+[
+  {
+    "url": "http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/bmvc16.png",
+    "path": "public/project-assets/better-together/bmvc16.png",
+    "status": "recovered",
+    "bytes": 356844,
+    "sha256": "9c8dd00798a8d9c95870eb656ab39abe24f83af68e722f954e52e29b3f2b98d1"
+  },
+  {
+    "url": "http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/bmvc16_better_together_poster.pdf",
+    "path": "public/project-assets/better-together/bmvc16_better_together_poster.pdf",
+    "status": "recovered",
+    "bytes": 5541518,
+    "sha256": "f2cd6b577b3e434dbc048be12bfdd429a23335e201b9e3dd2adc4031bcc9aba5"
+  },
+  {
+    "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/iccv2015.png",
+    "path": "public/project-assets/direct-dense-deformable/iccv2015.png",
+    "status": "recovered",
+    "bytes": 1199916,
+    "sha256": "fa0b066fc63afd3faf2e993f649162ff838c05a842e54cd8f9f46c8f14e03cb4"
+  },
+  {
+    "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/fig_cat6.png",
+    "path": "public/project-assets/video-popup/fig_cat6.png",
+    "status": "recovered",
+    "bytes": 928523,
+    "sha256": "845cbbd66181f4d73f992279c15f06748bce744ab71f59135b6776f1d2bc5348"
+  },
+  {
+    "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPop-up.pptx",
+    "path": "public/project-assets/video-popup/VideoPop-up.pptx",
+    "status": "failed",
+    "error": "curl: (63) Maximum file size exceeded"
+  },
+  {
+    "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPop-up.pdf",
+    "path": "public/project-assets/video-popup/VideoPop-up.pdf",
+    "status": "recovered",
+    "bytes": 2479593,
+    "sha256": "300a948532fae9647378a014798a771d42d6836597cb44ced8fde1096a34dad4"
+  },
+  {
+    "url": "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/VideoPopup_Poster.pdf",
+    "path": "public/project-assets/video-popup/VideoPopup_Poster.pdf",
+    "status": "recovered",
+    "bytes": 4291363,
+    "sha256": "4a60bfab3307ede0a985c53cc0d9c04523534d23d54393af950baf3a8389a314"
+  }
+]
