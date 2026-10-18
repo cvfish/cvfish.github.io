@@ -36,8 +36,8 @@ To add a custom domain later, configure it in GitHub Pages and update `site_url`
 
 Original content: http://www0.cs.ucl.ac.uk/staff/Rui.Yu/ (last modified November 17, 2019). Source snapshots and file hashes are retained in `migration/`; only `public/` is deployed.
 
-The current Staff Engineer title and public Gmail address were supplied by Rui in October 2026. Historical dates come from the original CV. No recent project accomplishments or promotion dates have been invented. The previous CV PDF remains available under a clearly marked archive link.
+The current Staff Research Engineer title and public Gmail address were supplied by Rui in October 2026. Historical dates come from the original CV. No recent project accomplishments or promotion dates have been invented. The previous CV PDF remains available under a clearly marked archive link.
 
-The homepage preserves all nine original publication entries and all three earlier engineering projects. Three linked research pages have been rebuilt with their original abstracts, figures, and resources. Large legacy datasets and videos may remain external; see `migration/NOTES.md` and the download manifests for the final inventory.
+The homepage presents selected publications, with extended versions grouped under their conference papers. Earlier engineering projects remain in the CV and source data. Three linked research pages have been rebuilt with their original abstracts, figures, and resources. Large legacy datasets and videos may remain external; see `migration/NOTES.md` and the download manifests for the final inventory.
 
 Original site design credit: Jon Barron's academic homepage template. This version uses a new layout and styling. Research figures, papers, and other materials retain their original authorship and publication rights.
