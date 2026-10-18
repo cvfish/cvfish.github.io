@@ -7,7 +7,7 @@
   "scholar": "https://scholar.google.com/citations?user=M0xPL9cAAAAJ&hl=en",
   "site_url": "https://cvfish.github.io",
   "intro": "I work on 3D computer vision and machine learning, with a particular interest in understanding the geometry and motion of the world from images and video.",
-  "homepage_intro": "My interests include 3D reconstruction and generation, 6DoF object tracking, and synthetic data. I have contributed to device tracking and hand tracking for Apple Vision Pro. My recent research includes Luce, which generates relightable 3D assets from a single image.",
+  "homepage_intro": "My interests include 3D reconstruction and generation, 6DoF object tracking, and synthetic data. I have contributed to Apple Device Tracking and hand tracking for Apple Vision Pro. My recent research includes Luce, which generates relightable 3D assets from a single image.",
   "background": "Before joining Apple, I worked on autonomous driving at DJI. I completed my PhD in computer vision at University College London, where my research focused on learning dense 3D models from monocular video, including reconstructing dynamic scenes and tracking deformable objects. Earlier, I studied at Northwestern Polytechnical University, where I worked on camera arrays, computational imaging, and visual tracking.",
   "interests": ["3D reconstruction", "Generative 3D modeling", "6DoF object tracking", "Synthetic data"],
   "experience": [
