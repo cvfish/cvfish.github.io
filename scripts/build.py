@@ -112,7 +112,7 @@ def research_pages():
     definitions = [
         ("better-together", "better_together.html", "http://www0.cs.ucl.ac.uk/staff/Qi.Liu/bmvc16/", "bmvc16.png", "https://www.youtube.com/watch?v=gT25sLQw1IA"),
         ("direct-dense-deformable", "direct_nrsfm.html", "http://www0.cs.ucl.ac.uk/staff/R.Yu/direct_nrsfm/", "iccv2015.png", "https://www.youtube.com/watch?v=O9VV3FFWiGU"),
-        ("video-popup", "VideoPopup2.html", "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/", "fig_cat6.png", "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/final_new_crop.ogv")
+        ("video-popup", "VideoPopup2.html", "http://www0.cs.ucl.ac.uk/staff/R.Yu/video_popup/", "fig_cat6.png", None)
     ]
     prefix = "../../"
     for slug, source_name, base, figure, video in definitions:
@@ -131,7 +131,7 @@ def research_pages():
                 local = f"project-assets/{slug}/{Path(href).name}"
                 url = local if (OUT / local).exists() else urljoin(base, href)
                 extra_links.append({"label": label.capitalize(), "url": url})
-        result_links = [{"label": "Video", "url": video}, *extra_links]
+        result_links = ([{"label": "Video", "url": video}] if video else []) + extra_links
         content = f'''<header class="detail-header"><a class="back-link" href="../../index.html#research">← All research</a><p class="eyebrow" style="margin-top:26px">{e(p['short_venue'])} {p['year']}{' · '+e(p['award']) if p['award'] else ''}</p><h1>{e(p['title'])}</h1><p class="pub-authors">{authors(p['authors'])}</p>{links([x for x in p['links'] if x['label'] != 'Project'],prefix)}</header>
         <figure class="detail-figure">{image(figure_path,p['image_alt'],prefix,eager=True)}</figure><div class="prose"><h2>Abstract</h2><p>{e(abstract_text)}</p><h2>Results</h2>{links(result_links,prefix)}</div><div class="detail-footer"><a href="../../index.html#research">← Back to all publications</a></div>'''
         page(f"projects/{slug}/index.html", p["title"]+" — Rui Yu", p["description"], content, prefix)
