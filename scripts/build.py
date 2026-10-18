@@ -80,7 +80,6 @@ def home():
       <ol class="publications">{''.join(publication(p) for p in papers)}</ol>
       <p class="thesis"><strong>PhD thesis:</strong> <a href="{e(local_link('papers/thesis_RuiYu.pdf'))}">Learning Dense 3D Models from Monocular Video</a> (UCL, 2017).</p></section>
     <section class="links-section"><h2>Links</h2><ul>
-      <li><a href="mailto:{e(profile['email'])}">{e(profile['email'])}</a></li>
       <li><a href="{e(profile['github'])}">GitHub</a></li>
       <li><a href="{e(profile['scholar'])}">Google Scholar</a></li>
     </ul></section>'''
