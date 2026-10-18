@@ -75,8 +75,7 @@ def publication(p):
 def home():
     content = f'''<header class="home-header"><h1>{e(profile['name'])}</h1>
       <p class="intro">I am a <strong>{e(profile['role'])}</strong> at <strong>{e(profile['company'])}</strong>. {e(profile['intro'])}</p></header>
-    <section id="about"><h2 id="bio">Bio</h2><p>{e(profile['background'])}</p>
-      <p>You can find more about my experience and education in my <a href="cv.html">CV</a> (<a href="files/rui-yu-cv.pdf">PDF</a>).</p></section>
+    <section id="about"><h2 id="bio">Bio</h2><p>{e(profile['background'])}</p></section>
     <section id="research"><h2 id="publications">Selected Publications</h2>
       <ol class="publications">{''.join(publication(p) for p in papers)}</ol>
       <p class="thesis"><strong>PhD thesis:</strong> <a href="{e(local_link('papers/thesis_RuiYu.pdf'))}">Learning Dense 3D Models from Monocular Video</a> (UCL, 2017).</p></section>
@@ -84,7 +83,6 @@ def home():
       <li><a href="mailto:{e(profile['email'])}">{e(profile['email'])}</a></li>
       <li><a href="{e(profile['github'])}">GitHub</a></li>
       <li><a href="{e(profile['scholar'])}">Google Scholar</a></li>
-      <li><a href="cv.html">CV</a> / <a href="files/rui-yu-cv.pdf">PDF</a></li>
     </ul></section>'''
     page("index.html", "Rui Yu — Computer Vision & Machine Learning", f"Rui Yu, {profile['role']} at {profile['company']}. 3D computer vision, machine learning, and selected publications.", content, body_class="home-page")
 
