@@ -131,8 +131,9 @@ def research_pages():
                 local = f"project-assets/{slug}/{Path(href).name}"
                 url = local if (OUT / local).exists() else urljoin(base, href)
                 extra_links.append({"label": label.capitalize(), "url": url})
+        result_links = [{"label": "Video", "url": video}, *extra_links]
         content = f'''<header class="detail-header"><a class="back-link" href="../../index.html#research">← All research</a><p class="eyebrow" style="margin-top:26px">{e(p['short_venue'])} {p['year']}{' · '+e(p['award']) if p['award'] else ''}</p><h1>{e(p['title'])}</h1><p class="pub-authors">{authors(p['authors'])}</p>{links([x for x in p['links'] if x['label'] != 'Project'],prefix)}</header>
-        <figure class="detail-figure">{image(figure_path,p['image_alt'],prefix,eager=True)}</figure><div class="prose"><h2>Abstract</h2><p>{e(abstract_text)}</p><h2>Results</h2><a class="video-link" href="{e(video)}">Watch the research demo <span aria-hidden="true">↗</span><span>{'Original video hosted at UCL' if 'www0.cs.ucl.ac.uk' in video else 'Video on YouTube'}</span></a>{links(extra_links,prefix) if extra_links else ''}</div><div class="detail-footer"><a href="../../index.html#research">← Back to all publications</a></div>'''
+        <figure class="detail-figure">{image(figure_path,p['image_alt'],prefix,eager=True)}</figure><div class="prose"><h2>Abstract</h2><p>{e(abstract_text)}</p><h2>Results</h2>{links(result_links,prefix)}</div><div class="detail-footer"><a href="../../index.html#research">← Back to all publications</a></div>'''
         page(f"projects/{slug}/index.html", p["title"]+" — Rui Yu", p["description"], content, prefix)
 
 home()
