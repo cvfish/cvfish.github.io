@@ -73,9 +73,10 @@ def publication(p):
       {links(p['links'])}</li>'''
 
 def home():
+    bio_html = "".join(f"<p>{e(paragraph)}</p>" for paragraph in profile["background"].split("\n\n"))
     content = f'''<header class="home-header"><h1>{e(profile['name'])}</h1>
-      <p class="intro">I am a <strong>{e(profile['role'])}</strong> at <strong>{e(profile['company'])}</strong>. {e(profile['intro'])}</p></header>
-    <section id="about"><h2 id="bio">Bio</h2><p>{e(profile['background'])}</p></section>
+      <p class="intro">I am a <strong>{e(profile['role'])}</strong> at <strong>{e(profile['company'])}</strong>, working on computer vision and machine learning. {e(profile['homepage_intro'])}</p></header>
+    <section id="about"><h2 id="bio">Bio</h2>{bio_html}</section>
     <section id="research"><h2 id="publications">Selected Publications</h2>
       <ol class="publications">{''.join(publication(p) for p in papers)}</ol>
       <p class="thesis"><strong>PhD thesis:</strong> <a href="{e(local_link('papers/thesis_RuiYu.pdf'))}">Learning Dense 3D Models from Monocular Video</a> (UCL, 2017).</p></section>
