@@ -55,9 +55,11 @@ def image(path, alt, prefix="", cls="", eager=False):
 
 def page(path, title, description, content, prefix="", body_class=""):
     canonical_path = "" if path == "index.html" else path
+    home_base = "" if path == "index.html" else prefix + "index.html"
     output = template.substitute(title=e(title), description=e(description), prefix=prefix,
         site_url=e(profile["site_url"]), canonical=e(profile["site_url"] + "/" + canonical_path),
-        body_class=body_class, content=content, cv_current=' aria-current="page"' if path == "cv.html" else "",
+        body_class=body_class, content=content, home_base=e(home_base), home_link=e(home_base or "#"),
+        cv_current=' aria-current="page"' if path == "cv.html" else "",
         email=e(profile["email"]), github=e(profile["github"]), scholar=e(profile["scholar"]), updated=e(profile["updated"]),
         css_version=asset_versions["site.css"], js_version=asset_versions["site.js"])
     target = OUT / path
