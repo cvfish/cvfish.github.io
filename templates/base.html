@@ -13,24 +13,23 @@
   <title>$title</title>
   <link rel="canonical" href="$canonical">
   <link rel="icon" href="${prefix}assets/favicon.svg" type="image/svg+xml">
+  <script src="${prefix}assets/site.js?v=$js_version"></script>
   <link rel="stylesheet" href="${prefix}assets/site.css?v=$css_version">
-  <script src="${prefix}assets/site.js?v=$js_version" defer></script>
 </head>
 <body class="$body_class">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="site-layout">
   <header class="site-header">
-      <p class="nav-label">Navigation</p>
+      <h2 class="nav-label">Navigation</h2>
       <nav aria-label="Main navigation">
-        <a href="${prefix}index.html">Home</a>
-        <a href="${prefix}index.html#bio">Bio</a>
-        <a href="${prefix}index.html#publications">Publications</a>
-        <a href="${prefix}cv.html"$cv_current>CV</a>
+        <a href="$home_link">Home</a>
+        <a href="${home_base}#bio">Bio</a>
+        <a href="${home_base}#publications">Publications</a>
       </nav>
   </header>
-  <main id="main">$content</main>
+  <main id="main"><button class="theme-toggle" type="button" role="switch" aria-label="Dark mode" aria-checked="false" data-theme-toggle hidden></button>$content</main>
   <footer class="site-footer">
-    <p>Updated $updated</p>
+    <p class="template-credit"><strong>This website template is from <a href="https://www.darioamodei.com/">https://www.darioamodei.com/</a></strong></p>
   </footer>
   </div>
 </body>
